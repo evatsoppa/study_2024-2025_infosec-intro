@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-RU" xml:lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Цоппа Е. Э" />
+  <title>Презентация по лабораторной работе №1</title>
+  <style>
+    html {
+      font-family: PT Serif;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: PT Mono;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  
+  
+  
+  
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Презентация по лабораторной работе №1</h1>
+<p class="subtitle">Основы информационной безопасности</p>
+<p class="author">Цоппа Е. Э</p>
+<p class="date">17 февраля 2025</p>
+</header>
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<p>:::::::::::::: {.columns align=center} ::: {.column width=“70%”}</p>
+<ul>
+<li>Цоппа Ева Эдуардовна</li>
+<li>студентка группы НКАбд-04-23</li>
+<li>Российский университет дружбы народов</li>
+</ul>
+<h2 id="цель">Цель</h2>
+<p>Целью данной работы является приобретение практических навыков
+установки операционной системы на виртуальную машину, настройки ми-
+нимально необходимых для дальнейшей работы сервисов.</p>
+<h2 id="задание">Задание</h2>
+<ol type="1">
+<li>Установка и настройка операционной системы.</li>
+<li>Найти следующую информацию:
+<ol type="1">
+<li>Версия ядра Linux (Linux version).</li>
+<li>Частота процессора (Detected Mhz processor).</li>
+<li>Модель процессора (CPU0).</li>
+<li>Объем доступной оперативной памяти (Memory available).</li>
+<li>Тип обнаруженного гипервизора (Hypervisor detected).</li>
+<li>Тип файловой системы корневого раздела.</li>
+</ol></li>
+</ol>
+<h2 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h2>
+<p>Я выполняю лабораторную работу на домашнем оборудовании, поэтому
+создаю новую виртуальную машину в VirtualBox, выбираю имя,
+местоположение и образ ISO, устанавливать будем операционную систему
+Rocku DVD</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/e7b9e197-365b-452b-8249-fc0157756d10"
+alt="Screenshot_14" />
+<figcaption aria-hidden="true">Screenshot_14</figcaption>
+</figure>
+<h2 id="соглашаюсь-с-проставленными-настройками">Соглашаюсь с
+проставленными настройками</h2>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/8aa309d0-f060-4149-a623-ee7e2ccf569f"
+alt="Screenshot_4" />
+<figcaption aria-hidden="true">Screenshot_4</figcaption>
+</figure>
+<h2 id="начинается-загрузка-операционной-системы">Начинается загрузка
+операционной системы</h2>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/fd622b9b-d554-47c9-a508-1370a817dccb"
+alt="Screenshot_5" />
+<figcaption aria-hidden="true">Screenshot_5</figcaption>
+</figure>
+<h2 id="при-этом-должен-быть-подключен-в-носителях-образ-диска">При этом
+должен быть подключен в носителях образ диска!</h2>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/fa213a1e-d509-48c4-a090-159815a6a05c"
+alt="Screenshot_19" />
+<figcaption aria-hidden="true">Screenshot_19</figcaption>
+</figure>
+<h2 id="выбираю-язык-установки">Выбираю язык установки</h2>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/90d95405-079d-4d9d-8989-aa65653768a9"
+alt="Screenshot_7" />
+<figcaption aria-hidden="true">Screenshot_7</figcaption>
+</figure>
+<h2
+id="в-обзоре-установки-будем-проверять-все-настройки-и-менять-на-нужные">В
+обзоре установки будем проверять все настройки и менять на нужные</h2>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/0640529f-67ef-4d56-b971-49611793a743"
+alt="Screenshot_8" />
+<figcaption aria-hidden="true">Screenshot_8</figcaption>
+</figure>
+<h2 id="начало-установки">Начало установки</h2>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/d30c9ea0-5ddc-4c7c-98cd-03546f64d17d"
+alt="Screenshot_18" />
+<figcaption aria-hidden="true">Screenshot_18</figcaption>
+</figure>
+<h2
+id="после-заврешения-установки-образ-диска-сам-пропадет-из-носителей">После
+заврешения установки образ диска сам пропадет из носителей</h2>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/5b782aee-9abd-4416-b4e0-38f3b7280588"
+alt="Screenshot_19" />
+<figcaption aria-hidden="true">Screenshot_19</figcaption>
+</figure>
+<p>##После установки при запуске операционной системы появляется окно
+выбора пользователя</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/2398da34-b983-4b51-b82f-546468a99538"
+alt="Screenshot_20" />
+<figcaption aria-hidden="true">Screenshot_20</figcaption>
+</figure>
+<h1 id="выполнение-дополнительного-задания">Выполнение дополнительного
+задания</h1>
+<h2 id="section">0</h2>
+<p>Открываю терминал, в нем прописываю dmesg | less</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/37effcd5-1281-4188-a78c-a9f57140936d"
+alt="Screenshot_21" />
+<figcaption aria-hidden="true">Screenshot_21</figcaption>
+</figure>
+<h2 id="section-1">1</h2>
+<p>Версия ядра 5.14.0-503.14.1.el9_5.x86_64</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/fb7bf6c3-5686-415e-a51b-c26d0e46c3e3"
+alt="Screenshot_22" />
+<figcaption aria-hidden="true">Screenshot_22</figcaption>
+</figure>
+<h2 id="section-2">2</h2>
+<p>Частота процессора 1800 МГц</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/35b507f7-8016-4bd0-a999-4cc88db815fe"
+alt="Screenshot_23" />
+<figcaption aria-hidden="true">Screenshot_23</figcaption>
+</figure>
+<h2 id="section-3">3</h2>
+<p>Модель процессора Intel Core i5-8250U</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/0c413ce0-cad7-4d5e-965e-02eb865f24a5"
+alt="Screenshot_24" />
+<figcaption aria-hidden="true">Screenshot_24</figcaption>
+</figure>
+<h2 id="section-4">4</h2>
+<p>Доступно 260860 Кб из 2096696 Кб</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/fa22e2fd-d6e0-400d-ad4e-a920e09449bb"
+alt="Screenshot_25" />
+<figcaption aria-hidden="true">Screenshot_25</figcaption>
+</figure>
+<h2 id="section-5">5</h2>
+<p>Обнаруженный гипервизор типа KVM</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/3e85d0f9-bfb1-4e1d-aca4-59117280973e"
+alt="Screenshot_26" />
+<figcaption aria-hidden="true">Screenshot_26</figcaption>
+</figure>
+<h2 id="section-6">6</h2>
+<p>sudo fdish -l показывает тип файловой системы, типа Linux, Linux
+LVM</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/edf99d1b-133d-4f56-8a43-096ee6beecf5"
+alt="Screenshot_27" />
+<figcaption aria-hidden="true">Screenshot_27</figcaption>
+</figure>
+<h2 id="section-7">7</h2>
+<p>Далее показана последовательно монтирования файловых систем</p>
+<figure>
+<img
+src="https://github.com/user-attachments/assets/5f7a1efd-a44c-49c4-a155-2cc20656a91f"
+alt="Screenshot_28" />
+<figcaption aria-hidden="true">Screenshot_28</figcaption>
+</figure>
+<h2 id="вывод">Вывод</h2>
+<p>Я приобрела практические навыки установки операционной системы на
+виртуальную машину, настройки ми- нимально необходимых для дальнейшей
+работы сервисов.</p>
+<p>:::</p>
+</body>
+</html>
